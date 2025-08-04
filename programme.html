@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programme | LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- === HEADER === -->
+  <header class="header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-lba.png" alt="Logo LBA">
+      </a>
+<div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html">Accueil</a>
+  <a href="programme.html" class="active">Programme</a>
+  <a href="inscriptions.html">Inscriptions</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="classement.html">Classements</a>
+  <a href="partenaires.html">Partenaires</a>
+  <a href="contact.html">Contact</a>
+  <a href="communautes.html">Communauté</a>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- === HERO PROGRAMME === -->
+  <section class="hero" style="background-image: url('assets/images/IMG-20250711-WA0111.jpg');">
+    <div class="hero-content">
+      <h1>Programme Officiel</h1>
+      <p>Découvrez le déroulement complet de la Ligue de Basket Africaine</p>
+    </div>
+  </section>
+
+  <!-- === SECTION : JOUR PAR JOUR === -->
+  <section class="programme">
+    <div class="container">
+      <h2>Déroulement de l'Événement</h2>
+
+      <div class="day-program">
+        <h3>🗓️ Jour 1 – Vendredi 15 Août 2025</h3>
+        <ul>
+          <li><strong>08h00 :</strong> Accueil des participants et remise des kits</li>
+          <li><strong>09h00 :</strong> Cérémonie d’ouverture officielle</li>
+          <li><strong>10h30 :</strong> Match d'ouverture : Lomé VS Abidjan</li>
+          <li><strong>14h00 :</strong> Ateliers de formation : leadership sportif & arbitrage</li>
+          <li><strong>17h00 :</strong> Match U18 : Cotonou VS Accra</li>
+        </ul>
+      </div>
+
+      <div class="day-program">
+        <h3>🗓️ Jour 2 – Samedi 16 Août 2025</h3>
+        <ul>
+          <li><strong>08h30 :</strong> Séance d'échauffement collectif (Coach Karim)</li>
+          <li><strong>09h00 :</strong> Masterclass : Techniques avancées de défense</li>
+          <li><strong>11h00 :</strong> Match Pro : Yaoundé VS Dakar</li>
+          <li><strong>15h00 :</strong> Concours de tirs à 3 points (show public)</li>
+          <li><strong>17h30 :</strong> Demi-finale : Vainqueurs poule A VS poule B</li>
+        </ul>
+      </div>
+
+      <div class="day-program">
+        <h3>🗓️ Jour 3 – Dimanche 17 Août 2025</h3>
+        <ul>
+          <li><strong>09h00 :</strong> Séance d’éveil musculaire & massage sportif</li>
+          <li><strong>10h00 :</strong> Match de classement 3e place</li>
+          <li><strong>13h00 :</strong> Grande Finale : Champions des deux poules</li>
+          <li><strong>15h00 :</strong> Pause festive (animations, danse, freestyle)</li>
+          <li><strong>17h00 :</strong> Cérémonie de clôture et remise des trophées</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SECTION : FORMATIONS === -->
+  <section class="about">
+    <div class="container">
+      <h2>Formations et Ateliers</h2>
+      <p>En marge des compétitions, la LBA organise plusieurs sessions de formations intensives pour les jeunes joueurs, coachs et arbitres avec des intervenants internationaux.</p>
+      <ul class="goals">
+        <li>Initiation à la gestion de carrière pour les jeunes talents</li>
+        <li>Arbitrage FIBA : théorie + simulation sur terrain</li>
+        <li>Stratégies de jeu collectif en haute intensité</li>
+        <li>Leadership et développement personnel dans le sport</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- === SECTION : TÉLÉCHARGER PROGRAMME PDF === -->
+  <section class="cta">
+    <div class="container">
+      <h2>Besoin du programme complet ?</h2>
+      <a href="assets/docs/programme-lba.pdf" class="btn-orange" download>Télécharger en PDF</a>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ligue de Basket Africaine. Tous droits réservés.</p>
+      <p>Site développé par AJAVON M.Z.P.O</p>
+    </div>
+  </footer>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

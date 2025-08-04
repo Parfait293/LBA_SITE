@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Communauté | LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- === HEADER === -->
+  <header class="header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-lba.png" alt="Logo LBA" />
+      </a>
+<div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html">Accueil</a>
+  <a href="programme.html">Programme</a>
+  <a href="inscriptions.html">Inscriptions</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="classement.html">Classements</a>
+  <a href="partenaires.html">Partenaires</a>
+  <a href="contact.html">Contact</a>
+  <a href="communautes.html" class="active">Communauté</a>
+</nav>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero" style="background-image: url('assets/images/IMG-20250711-WA0095.jpg');">
+    <div class="hero-content">
+      <h1>Rejoignez la Communauté LBA</h1>
+      <p>Unissez-vous aux passionnés de basketball à travers l'Afrique</p>
+      <a href="#inscription-communaute" class="btn-orange">S'inscrire à la Communauté</a>
+    </div>
+  </section>
+
+  <!-- === PRESENTATION COMMUNAUTE === -->
+  <section class="community-intro">
+    <div class="container">
+      <h2>Notre Communauté</h2>
+      <p>
+        La communauté LBA rassemble joueurs, entraîneurs, arbitres, et supporters engagés qui partagent la passion du basketball. 
+        Ensemble, nous développons le sport à travers des échanges, des formations, et la participation active aux tournois.
+      </p>
+      <p>
+        En rejoignant notre communauté, vous bénéficiez d’un accès privilégié aux événements, ateliers et séances de coaching exclusifs.
+      </p>
+    </div>
+  </section>
+
+  <!-- === INSCRIPTION COMMUNAUTE === -->
+  <section id="inscription-communaute" class="inscription-section">
+    <div class="container">
+      <h2>Inscription à la Communauté</h2>
+      <form class="inscription-form" action="#" method="post">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required />
+
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required />
+
+        <label for="role">Rôle dans la communauté</label>
+        <select id="role" name="role" required>
+          <option value="">-- Sélectionnez votre rôle --</option>
+          <option value="joueur">Joueur</option>
+          <option value="entraineur">Entraîneur</option>
+          <option value="arbitre">Arbitre</option>
+          <option value="supporter">Supporter</option>
+        </select>
+
+        <label for="region">Région</label>
+        <input type="text" id="region" name="region" placeholder="Votre région" required />
+
+        <button type="submit" class="btn-orange">S'inscrire</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- === SELECTION DES JOUEURS === -->
+  <section class="selection-joueurs">
+    <div class="container">
+      <h2>Processus de Sélection des Joueurs</h2>
+      <p>
+        Chaque année, la LBA organise une sélection rigoureuse des meilleurs joueurs afin de représenter dignement leurs régions aux compétitions panafricaines.
+      </p>
+      <ol>
+        <li>Les joueurs inscrits sont invités à des essais régionaux.</li>
+        <li>Les entraîneurs et scouts évaluent les performances et le potentiel.</li>
+        <li>Une liste restreinte est publiée pour la sélection finale.</li>
+        <li>Les joueurs retenus participent à des camps d’entraînement intensifs.</li>
+      </ol>
+      <p>
+        Vous souhaitez tenter votre chance ? Inscrivez-vous dès maintenant dans la communauté et suivez nos annonces !
+      </p>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ligue de Basket Africaine. Tous droits réservés.</p>
+      <p>Site développé par AJAVON M.Z.P.O</p>
+    </div>
+  </footer>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

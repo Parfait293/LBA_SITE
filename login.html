@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connexion | LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: var(--noir);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Anton', sans-serif;
+      color: var(--blanc);
+    }
+    .login-container {
+      background: var(--orange);
+      padding: 40px 50px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .login-container h2 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: var(--blanc);
+    }
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .login-container input {
+      padding: 12px 15px;
+      border-radius: var(--radius);
+      border: none;
+      font-size: 1.1rem;
+      font-family: 'Anton', sans-serif;
+    }
+    .login-container button {
+      background: var(--noir);
+      color: var(--orange);
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .login-container button:hover {
+      background: var(--btn-hover);
+      color: var(--blanc);
+    }
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 30px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Connexion</h2>
+    <form action="login_process.php" method="post">
+      <input type="text" name="username" placeholder="Nom d'utilisateur" required autocomplete="username" />
+      <input type="password" name="password" placeholder="Mot de passe" required autocomplete="current-password" />
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

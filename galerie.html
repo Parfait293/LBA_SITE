@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galerie | LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- === HEADER === -->
+  <header class="header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-lba.png" alt="Logo LBA" />
+      </a>
+<div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html">Accueil</a>
+  <a href="programme.html">Programme</a>
+  <a href="inscriptions.html">Inscriptions</a>
+  <a href="galerie.html" class="active">Galerie</a>
+  <a href="classement.html">Classements</a>
+  <a href="partenaires.html">Partenaires</a>
+  <a href="contact.html">Contact</a>
+  <a href="communautes.html">Communauté</a>
+</nav>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero" style="background-image: url('assets/images/IMG-20250711-WA0110.jpg');">
+    <div class="hero-content">
+      <h1>Galerie Photos & Vidéos</h1>
+      <p>Revivez les moments forts de la Ligue de Basket Africaine</p>
+    </div>
+  </section>
+
+  <!-- === GALERIE PHOTOS === -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Photos</h2>
+      <div class="gallery-grid">
+        <img src="assets/images/photos/photo1.jpg" alt="Match LBA 1" />
+        <img src="assets/images/photos/photo2.jpg" alt="Match LBA 2" />
+        <img src="assets/images/photos/photo3.jpg" alt="Fans au stade" />
+        <img src="assets/images/photos/photo4.jpg" alt="Cérémonie d'ouverture" />
+        <img src="assets/images/photos/photo5.jpg" alt="Entraînement équipe" />
+        <img src="assets/images/photos/photo6.jpg" alt="Remise des trophées" />
+      </div>
+    </div>
+  </section>
+
+  <!-- === GALERIE VIDÉOS === -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Vidéos</h2>
+      <div class="gallery-grid videos-grid">
+        <video controls>
+          <source src="assets/videos/highlight1.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+        <video controls>
+          <source src="assets/videos/highlight2.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+        <video controls>
+          <source src="assets/videos/highlight3.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ligue de Basket Africaine. Tous droits réservés.</p>
+      <p>Site développé par AJAVON M.Z.P.O</p>
+    </div>
+  </footer>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

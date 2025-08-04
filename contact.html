@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- === HEADER === -->
+  <header class="header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-lba.png" alt="Logo LBA" />
+      </a>
+ <div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html">Accueil</a>
+  <a href="programme.html">Programme</a>
+  <a href="inscriptions.html">Inscriptions</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="classement.html">Classements</a>
+  <a href="partenaires.html">Partenaires</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="communautes.html">Communauté</a>
+</nav>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero" style="background-image: url('assets/images/IMG-20250711-WA0083.jpg');">
+    <div class="hero-content">
+      <h1>Contactez-nous</h1>
+      <p>Nous sommes à votre écoute pour toute question ou demande d’information</p>
+    </div>
+  </section>
+
+  <!-- === CONTACT FORM + INFOS === -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Informations de Contact</h2>
+        <p><strong>Adresse :</strong> 123 Rue du Basket, Lomé, Togo</p>
+        <p><strong>Téléphone :</strong> +228 90 00 00 00</p>
+        <p><strong>Email :</strong> contact@lba-africa.com</p>
+        <p><strong>Horaires :</strong> Lun - Ven : 9h - 18h</p>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <h2>Envoyez un message</h2>
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse email" required />
+
+        <label for="objet">Objet</label>
+        <input type="text" id="objet" name="objet" placeholder="Sujet de votre message" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+        <button type="submit" class="btn-orange">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- === CARTE GOOGLE MAPS === -->
+  <section class="map-section">
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.0000000000005!2d1.234567!3d6.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDAnMDAuMCJOIDHCsDE0JzAwLjAiRQ!5e0!3m2!1sfr!2stg!4v0000000000000"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Carte LBA"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ligue de Basket Africaine. Tous droits réservés.</p>
+      <p>Site développé par AJAVON M.Z.P.O</p>
+    </div>
+  </footer>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

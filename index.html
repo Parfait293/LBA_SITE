@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- === HEADER === -->
+<header class="header">
+  <div class="container header-flex">
+    <!-- Logo avec image -->
+    <a href="index.html" class="logo">
+      <img src="assets/images/IMG-20250711-WA0004.jpg" alt="Logo LBA">
+    </a>
+
+    <!-- Navigation -->
+<div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="active">Accueil</a>
+  <a href="programme.html">Programme</a>
+  <a href="inscriptions.html">Inscriptions</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="classement.html">Classements</a>
+  <a href="partenaires.html">Partenaires</a>
+  <a href="contact.html">Contact</a>
+  <a href="communautes.html">Communauté</a>
+</nav>
+  </div>
+</header>
+
+  <!-- === HERO === -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenue à la Ligue de Basket Africaine</h1>
+      <p>Un événement panafricain célébrant l'excellence, la passion et la culture du basketball.</p>
+      <a href="inscriptions.html" class="btn-orange">Rejoindre la Communauté</a>
+    </div>
+  </section>
+
+  <!-- === SECTION: À PROPOS === -->
+  <section class="about">
+    <div class="container">
+      <h2>À propos de la LBA</h2>
+      <p>
+        La Ligue de Basket Africaine (LBA) est un mouvement sportif qui rassemble les meilleures équipes, coachs, arbitres et fans autour de tournois passionnants et de formations de haut niveau à travers tout le continent africain.
+      </p>
+      <p>
+        Créée pour développer le talent local, promouvoir le sport chez les jeunes et connecter les professionnels du basketball africain, la LBA organise chaque année une série d’événements dans différentes régions.
+      </p>
+    </div>
+  </section>
+
+  <!-- === SECTION: ACTIVITÉS === -->
+  <section class="activities">
+    <div class="container">
+      <h2>Nos Activités Principales</h2>
+      <div class="activity-grid">
+        <div class="activity-card">
+          <h3>Tournois Nationaux</h3>
+          <p>Des compétitions inter-régionales réunissant les meilleures équipes du pays.</p>
+        </div>
+        <div class="activity-card">
+          <h3>Formation des Arbitres</h3>
+          <p>Sessions intensives pour améliorer les compétences d'arbitrage au standard FIBA.</p>
+        </div>
+        <div class="activity-card">
+          <h3>Camps Jeunes Talents</h3>
+          <p>Détection et accompagnement des jeunes basketteurs prometteurs.</p>
+        </div>
+        <div class="activity-card">
+          <h3>Masterclass des Coachs</h3>
+          <p>Formations pour les entraîneurs avec des experts internationaux du basketball.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SECTION: OBJECTIFS === -->
+  <section class="goals">
+    <div class="container">
+      <h2>Nos Objectifs</h2>
+      <ul>
+        <li>Créer un réseau solide de clubs et d’acteurs du basketball en Afrique.</li>
+        <li>Encourager l’inscription des jeunes aux activités sportives.</li>
+        <li>Valoriser les performances à travers des classements officiels.</li>
+        <li>Renforcer la visibilité des sponsors et partenaires du sport africain.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- === SECTION: TEMOIGNAGES === -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Ce que disent nos membres</h2>
+      <div class="testimonial">
+        <blockquote>
+          “Participer à la LBA a changé ma vie ! J’ai été repéré par un club grâce au tournoi régional.”
+        </blockquote>
+        <cite>– Kossi A., joueur U20</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>
+          “La formation pour entraîneurs m’a permis de mieux encadrer mes jeunes joueurs au centre.”
+        </blockquote>
+        <cite>– Coach Nadège A.</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SECTION: SPONSORS === -->
+  <section class="sponsors">
+    <div class="container">
+      <h2>Nos Partenaires Officiels</h2>
+      <div class="sponsor-logos">
+        <img src="assets/images/IMG-20250711-WA0081.jpg" alt="Nike">
+        <img src="assets/images/IMG-20250711-WA0095.jpg" alt="FIBA">
+        <img src="assets/images/IMG-20250711-WA0102.jpg" alt="Orange">
+        <img src="assets/images/IMG-20250711-WA0005.jpg" alt="Port Autonome de Lomé">
+      </div>
+    </div>
+  </section>
+
+  <!-- === SECTION: APPEL À L’ACTION === -->
+  <section class="cta">
+    <div class="container">
+      <h2>Prêt à rejoindre l’élite du basket africain ?</h2>
+      <a href="inscriptions.html" class="btn-orange">Inscris-toi maintenant</a>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ligue de Basket Africaine. Tous droits réservés.</p>
+      <p>Site développé par AJAVON M.Z.P.O</p>
+    </div>
+  </footer>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

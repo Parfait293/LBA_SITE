@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partenaires | LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- === HEADER === -->
+  <header class="header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-lba.png" alt="Logo LBA" />
+      </a>
+<div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html">Accueil</a>
+  <a href="programme.html">Programme</a>
+  <a href="inscriptions.html">Inscriptions</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="classement.html">Classements</a>
+  <a href="partenaires.html" class="active">Partenaires</a>
+  <a href="contact.html">Contact</a>
+  <a href="communautes.html">Communauté</a>
+</nav>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero" style="background-image: url('assets/images/IMG-20250711-WA0083.jpg');">
+    <div class="hero-content">
+      <h1>Nos Partenaires Officiels</h1>
+      <p>Merci à nos précieux sponsors qui rendent la LBA possible</p>
+    </div>
+  </section>
+
+  <!-- === PARTENAIRES === -->
+  <section class="partners-section">
+    <div class="container">
+      <h2>Partenaires Stratégiques</h2>
+      <div class="partners-grid">
+        <a href="https://www.nike.com" target="_blank" rel="noopener" title="Nike">
+          <img src="assets/images/IMG-20250711-WA0079.jpg" alt="Logo Nike" />
+        </a>
+        <a href="https://www.fiba.basketball" target="_blank" rel="noopener" title="FIBA">
+          <img src="assets/images/IMG-20250711-WA0087.jpg" alt="Logo FIBA" />
+        </a>
+        <a href="https://www.orange.com" target="_blank" rel="noopener" title="Orange">
+          <img src="assets/images/IMG-20250711-WA0079.jpg" alt="Logo Orange" />
+        </a>
+        <a href="https://www.togoport.tg" target="_blank" rel="noopener" title="Port Autonome de Lomé">
+          <img src="assets/images/IMG-20250711-WA0099.jpg" alt="Logo Port Autonome de Lomé" />
+        </a>
+      </div>
+
+      <h2 style="margin-top: 60px;">Sponsors Locaux & Institutionnels</h2>
+      <div class="partners-grid">
+        <a href="#" title="Sponsor 1"><img src="assets/images/IMG-20250711-WA0082.jpg" alt="Sponsor 1" /></a>
+        <a href="#" title="Sponsor 2"><img src="assets/images/IMG-20250711-WA0081.jpg" alt="Sponsor 2" /></a>
+        <a href="#" title="Sponsor 3"><img src="assets/images/IMG-20250711-WA0081.jpg" alt="Sponsor 3" /></a>
+        <a href="#" title="Sponsor 4"><img src="assets/images/IMG-20250711-WA0081.jpg" alt="Sponsor 4" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ligue de Basket Africaine. Tous droits réservés.</p>
+      <p>Site développé par AJAVON M.Z.P.O</p>
+    </div>
+  </footer>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

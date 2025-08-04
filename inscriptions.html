@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscriptions | LBA - Ligue de Basket Africaine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- === HEADER === -->
+  <header class="header">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-lba.png" alt="Logo LBA" />
+      </a>
+ <div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html">Accueil</a>
+  <a href="programme.html">Programme</a>
+  <a href="inscriptions.html" class="active">Inscriptions</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="classement.html">Classements</a>
+  <a href="partenaires.html">Partenaires</a>
+  <a href="contact.html">Contact</a>
+  <a href="communautes.html">Communauté</a>
+</nav>
+    </div>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero" style="background-image: url('assets/images/IMG-20250711-WA0086.jpg');">
+    <div class="hero-content">
+      <h1>Rejoignez la Communauté LBA</h1>
+      <p>Inscrivez-vous aux activités, tournois et formations.</p>
+    </div>
+  </section>
+
+  <!-- === FORMULAIRE D'INSCRIPTION === -->
+  <section class="form-section">
+    <div class="container">
+      <h2>Formulaire d’Inscription</h2>
+      <form action="submit_inscription.php" method="POST" class="form-inscription" novalidate>
+        <!-- Nom -->
+        <label for="nom">Nom complet *</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required />
+
+        <!-- Email -->
+        <label for="email">Adresse e-mail *</label>
+        <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required />
+
+        <!-- Téléphone -->
+        <label for="telephone">Numéro de téléphone *</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="+228 90 00 00 00" required pattern="^\+?\d{8,15}$" />
+
+        <!-- Date de naissance -->
+        <label for="dob">Date de naissance *</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <!-- Activité à choisir -->
+        <label for="activite">Activité souhaitée *</label>
+        <select id="activite" name="activite" required>
+          <option value="" disabled selected>-- Choisissez une activité --</option>
+          <option value="tournoi">Tournoi national</option>
+          <option value="formation_arbitre">Formation arbitre</option>
+          <option value="camp_jeunes">Camp jeunes talents</option>
+          <option value="masterclass_coachs">Masterclass coachs</option>
+          <option value="communaute">Adhésion communauté LBA</option>
+        </select>
+
+        <!-- Commentaire -->
+        <label for="commentaire">Commentaire / Questions (optionnel)</label>
+        <textarea id="commentaire" name="commentaire" rows="4" placeholder="Vos questions ou remarques"></textarea>
+
+        <!-- Consentement RGPD -->
+        <div class="checkbox-group">
+          <input type="checkbox" id="consentement" name="consentement" required />
+          <label for="consentement">
+            J'accepte que mes données soient utilisées pour le traitement de mon inscription conformément à la politique de confidentialité.
+          </label>
+        </div>
+
+        <!-- Bouton envoyer -->
+        <button type="submit" class="btn-orange">Envoyer mon inscription</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ligue de Basket Africaine. Tous droits réservés.</p>
+      <p>Site développé par AJAVON M.Z.P.O</p>
+    </div>
+  </footer>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
